@@ -1,0 +1,102 @@
+.year {
+    min-height: 85px;
+    max-height: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @include padFirst {
+        padding: 32px 22px;
+    }
+
+
+    .eventYear {
+        @include mobile {
+            font-size: 22px !important;
+        }
+    }
+}
+
+
+.time {
+    @include padFirst {
+        p {
+            font-size: 32px !important;
+        }
+    }
+}
+
+
+.eventDate {
+    padding: 14px 24px;
+    min-height: 85px;
+    position: relative;
+
+
+    .day-title {
+        margin: 0px;
+        font-size: 22px !important;
+        height: 100%;
+
+        @include padFirst {
+            margin-bottom: 126px;
+            font-size: 48px !important;
+        }
+    }
+
+    @include padFirst {
+        padding: 48px 44px;
+    }
+}
+
+
+.eventImg {
+    object-fit: cover !important;
+}
+
+.eventPage {
+    flex-grow: 1;
+}
+
+.time::before {
+    content: "";
+    width: 3px;
+    height: 55px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(35deg);
+
+}
+
+
+.eventSale {
+    max-width: 112px;
+    min-width: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: $yellow !important;
+        background: $black !important;
+    }
+
+    @include pad {
+        font-size: 14px !important;
+    }
+}
+
+.eventContent {
+    .container {
+        p {
+            font-size: 22px;
+
+            @include pad {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

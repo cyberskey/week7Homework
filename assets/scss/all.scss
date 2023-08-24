@@ -1,0 +1,34 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import './utils/mixin';
+@import './utils/variables';
+@import "./utils/utilities";
+
+@import './base/base';
+@import './base/reset';
+
+
+@import './components/button';
+@import './components/pagination';
+@import './components/modal';
+@import './components/tag';
+@import './components/progressBar';
+
+@import "./utils/banner";
+@import "./utils/titleBanner";
+@import "./utils/dividedBanner";
+@import "./utils/swiper";
+
+
+@import "./layout/container";
+@import './layout/header';
+@import './layout/footer';
+
+@import './pages/index';
+@import './pages/event';
+@import './pages/eventBlog';
+@import './pages/login';
+@import './pages/order';
+@import './utils/validation';
+
+@import "../../node_modules/bootstrap";

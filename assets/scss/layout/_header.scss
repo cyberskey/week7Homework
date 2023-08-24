@@ -1,0 +1,64 @@
+.search {
+    width: 335px;
+    height: 55px;
+    border: 2px solid $black !important;
+
+    input[type="text"] {
+        padding: 16px 0 16px 24px;
+    }
+
+    .icofont-search-1 {
+        width: 51px;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: contain;
+
+        @include pad {
+            width: 39px;
+            height: 100% !important;
+        }
+    }
+
+    @include pad {
+        width: 207px;
+        height: 39px;
+    }
+}
+
+.navbar {
+    .container-fluid {
+        background: $main !important;
+    }
+}
+
+.navbar-toggler-icon {
+    width: 54px;
+    height: 38px;
+}
+
+.navLink {
+    &:hover {
+        color: $oliveGreen;
+    }
+}
+
+.navbar-collapse {
+    position: fixed;
+    z-index: 2;
+}
+
+.logo {
+    width: 53px !important;
+    height: 53px !important;
+
+    @include mobile {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+.logoLink {
+    display: block !important;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}

@@ -1,0 +1,25 @@
+.btn-dark {
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.btn-light {
+    color: $dark;
+
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+.loginBtn,
+.viewEventBtn,
+.subscribeBtn,
+.purchaseBtn,
+.paymentBtn {
+    &:hover {
+        color: $yellow !important;
+        opacity: 0.8;
+    }
+}

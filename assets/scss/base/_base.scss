@@ -1,0 +1,132 @@
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    background: $gray31;
+    font-family: cursive, serif;
+}
+
+h1,
+h2,
+.h2-lg {
+    font-family: "Yeseva One" !important;
+}
+
+h3,
+h4,
+h5 {
+    font-family: "Noto Serif TC" !important;
+    font-weight: 700 !important;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 0 !important;
+
+    @include pad {
+        font-size: 32px !important;
+    }
+
+    @include mobile {
+        font-size: 24px !important;
+    }
+}
+
+.h1-lg {
+    font-size: 60px !important;
+
+    @include pad {
+        font-size: 32px !important;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 0 !important;
+
+    @include pad {
+        font-size: 24px !important;
+    }
+
+    @include mobile {
+        font-size: 16px !important;
+    }
+}
+
+.h2-lg {
+
+    font-size: 48px;
+    margin-bottom: 0 !important;
+
+    @include pc-xl {
+        font-size: 32px !important;
+    }
+}
+
+.h2-xl {
+    font-size: 64px !important;
+
+    @include pad {
+        font-size: 32px !important;
+    }
+
+    @include mobile {
+        font-size: 24px !important;
+    }
+}
+
+h3 {
+    font-size: 24px !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+
+    @include pad {
+        font-size: 20px !important;
+    }
+
+    @include mobile {
+        font-size: 18px !important;
+    }
+}
+
+
+h4 {
+    font-size: 18px !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+
+    @include pad {
+        font-size: 14px !important;
+    }
+}
+
+h5 {
+    font-size: 16px !important;
+    margin-bottom: 0 !important;
+    font-weight: 700;
+}
+
+a {
+    display: block;
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.material-symbols-outlined {
+    width: 24px;
+    height: 24px;
+}
+
+i {
+    font-size: 18px !important;
+    color: #1F1142 !important;
+}
+
+th,
+td {
+    vertical-align: middle;
+}

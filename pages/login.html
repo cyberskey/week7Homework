@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/headLink'); -%>
+    <title>登入頁面</title>
+</head>
+<body>
+
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/headerCollapse'); -%>
+
+    <div class="login vh-100">
+        <div class=" container">
+            <div class="row">
+                <div class="col-8 col-sm-6 col-lg-4 mx-auto">
+
+                    <form action="#" class="loginForm d-flex flex-column needs-validation" novalidate>
+                        <span class="mb-16 mx-auto"><img src="../assets/images/sparkler.png" alt="sparkler.png"></span>
+                        <h1 class="mb-16 fs-24 mx-auto fw-bold">會員登入</h1>
+                        <label for="account" class="mb-8">帳號</label>
+                        <input type="text" name="account" id="account" placeholder="請輸入帳號" class="form-control py-8 ps-16" required>
+                        <span id="accountFeedback" class="invalid-feedback">請請輸入帳號</span>
+
+                        <label for="password" class="mt-16 mb-8">密碼</label>
+                        <input type="password" name="password" id="password" placeholder="請輸入密碼" class="form-control py-8 ps-16" required>
+                        <span id="passwordFeedback" class="invalid-feedback">請輸入密碼</span>
+                        <button type="submit" class="loginBtn btn btn-dark text-white w-100 mt-32">登入</button>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
+
+                if(form[0].checkValidity()){
+                    window.open("index.html");
+                } 
+
+            });
+        });
+    </script>
+
+    <%- include('./layout/aos'); -%>
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>

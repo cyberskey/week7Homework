@@ -1,0 +1,10 @@
+.orderDetail {
+    h1 {
+        font-size: 32px;
+
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+
+}

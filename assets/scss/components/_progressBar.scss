@@ -1,0 +1,36 @@
+.number {
+    border: 1px solid $black;
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    z-index: 1;
+}
+
+.pay-list::before {
+    content: "";
+    width: 83%;
+    height: 1px;
+    background: $black;
+    position: absolute;
+    top: 16px;
+    left: 32px;
+}
+
+.number-active {
+    background-color: $black;
+    color: $yellow;
+}
+
+@media (min-width: 768px) {
+    .number {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .pay-list::before {
+        content: "";
+        top: 24px;
+        left: 48px;
+    }
+}

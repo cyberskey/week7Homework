@@ -1,0 +1,10 @@
+.titleBanner {
+    .container {
+        padding: 24px 32px;
+
+        @include pad {
+            padding: 16px 12px;
+        }
+
+    }
+}

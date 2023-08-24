@@ -1,0 +1,69 @@
+.icofont-ui-email,
+.icofont-facebook,
+.icofont-phone {
+    width: 32px;
+    height: 32px;
+    color: $white !important;
+    background: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.check-circled {
+    @include mobile {
+        margin-bottom: 18px;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border: 2px solid $black;
+    background: lightgray;
+}
+
+.eventCard {
+    h3 {
+        font-size: 48px;
+
+        @include pc-xl {
+            font-size: 32px;
+        }
+    }
+
+    .cardBody {
+        .cardTitle {
+            font-size: 24px;
+
+            @include pad {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+
+.img-hover {
+    width: 100%;
+    transition: 0.3s ease-in;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.pb-25 {
+    padding-bottom: 25px;
+}

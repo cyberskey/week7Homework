@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/headLink'); -%>
+    <title>訂單確認</title>
+</head>
+<body>
+
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/headerCollapse'); -%>
+
+    <div class="login">
+        <div class=" container">
+            <div class="row mt-60 mb-60">
+                <div class="col-md-6 mx-auto">
+      
+                    <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative mb-48">
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0"><span class="material-symbols-outlined">
+                            done
+                            </span></p>
+                        <p class="fw-bold mb-0">訂單確認</p>
+                      </li>
+                      
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0">2</p>
+                        <p class="fw-bold mb-0">結帳付款</p>
+                      </li>
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center mb-0">3</p>
+                        <p class="fw-bold mb-0">訂單結果</p>
+                      </li>
+                    </ol>
+
+                    <h1 class="fs-48 mb-32">返老還童-制服聯誼</h1>
+                    
+                    <div class="swiper mySwiper dividedBanner p-0 m-0 mb-60">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide py-8">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</div>
+                          <div class="swiper-slide py-8">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</div>
+                        </div>
+                      </div>
+
+                    <div class=" d-flex justify-content-between border-top border-2 py-8">
+                        <span>訂單編號</span>
+                        <span>892746123</span>
+                    </div>
+                    <div class=" d-flex justify-content-between border-top py-8">
+                        <span>票券</span>
+                        <span>改頭換面票（含大改造）$8000</span>
+                    </div>
+
+                    <form action="order.html" class="loginForm d-flex flex-column needs-validation" novalidate>
+                        <span class="mb-16 mx-auto"><img src="../assets/images/sparkler.png" alt="sparkler.png"></span>
+                        <h3 class="mb-16 fs-24 mx-auto fw-bold">結帳資訊</h3>
+                        <label for="ticketInfo" class="mb-8 ">取票資訊</label>
+                        <input type="text" name="ticketInfo" id="ticketInfo" placeholder="取票資訊
+                        請輸入身分證字號或護照號碼" class="form-control py-8 ps-16" required>
+                        <span id="ticketInfoFeedback" class="invalid-feedback">請輸入身分證字號或護照號碼</span>
+
+
+                        <span class="mb-16">請輸入您的<span class="mt-4 text-danger">身分證字號</span>供取票使用，外籍人士請輸入<span class="text-danger">護照號碼</span></span>
+
+                        
+                        <label class="mb-8">付款方式</label>
+                        <div class="mb-8"><input type="radio" name="creditCard" id="creditCard" value="信用卡" class="me-8"><span>信用卡</span></div>
+                        <div class="mb-32"><input type="radio" name="atmAccount" id="atmAccount" value="ATM虛擬帳號" class="me-8"><span>ATM虛擬帳號</span></div>
+
+                        <button type="submit" class="paymentBtn btn btn-dark text-white py-8 w-50 mx-auto">確認訂單並繳費 $8000</button>
+                        
+                    </form>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <%- include('./layout/footer'); -%>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+
+      const swiper = new Swiper(".mySwiper", {
+        loop:true, 
+        speed:30000,
+        slidesPerView: "auto",
+        spaceBetween:0,
+        allowTouchMove:false,
+        
+        autoplay: {
+        delay: 0,
+        disableOnInteraction:false,
+    
+          //reverseDirection: true,
+        },
+      });
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script>
+      $('.needs-validation').each(function(index) {
+            var form = $(this);
+            form.on('submit', function(e) {
+                e.preventDefault();
+                form.addClass('was-validated');
+
+                if(form[0].checkValidity()){
+                    window.open("order.html");
+                } 
+
+            });
+        });
+    </script>
+
+    <%- include('./layout/aos'); -%>
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>

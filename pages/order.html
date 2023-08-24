@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/headLink'); -%>
+    <title>訂單確認</title>
+</head>
+<body>
+
+    <%- include('./layout/header'); -%>
+    <%- include('./layout/headerCollapse'); -%>
+
+    <div class="order vh-100">
+        <div class=" container">
+            <div class="row mt-60 mb-60">
+                <div class="orderDetail col-md-6 mx-auto">
+      
+                    <ol class="pay-list mt-5 d-flex justify-content-between list-unstyled position-relative mb-48">
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0"><span class="material-symbols-outlined">
+                            done
+                            </span></p>
+                        <p class="fw-bold mb-0">訂單確認</p>
+                      </li>
+                      
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0"><span class="material-symbols-outlined">
+                            done
+                            </span></p>
+                        <p class="fw-bold mb-0">結帳付款</p>
+                      </li>
+                      
+                      <li class="d-flex flex-column align-items-center">
+                        <p class="number d-flex justify-content-center align-items-center number-active mb-0">3</p>
+                        <p class="fw-bold mb-0">訂單結果</p>
+                      </li>
+                    </ol>
+
+        
+                    <div class="check-circled d-flex justify-content-center align-items-center"><img src="../assets/images/check-circled.svg" alt="check-circled.svg" style="width: 48px;height: 48px;"></div>
+                    <h2 class="mb-32 text-center fw-bold">訂購成功</h2>
+                    
+                    <div class="d-flex justify-content-between border-top border-2 py-8">
+                        <h5>訂單編號</h5>
+                        <span>892746123</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-top py-8">
+                        <h5>訂購時間</h5>
+                        <span>2023/04/28 14:30</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-top border-bottom py-8">
+                        <h5>票券</h5>
+                        <span>改頭換面票（含大改造）$8000</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom py-8">
+                        <h5>取票序號</h5>
+                        <span class="text-danger">95G54J4434</span>
+                    </div>
+                    <div class="d-flex justify-content-between border-bottom py-8 mb-16">
+                        <h5>取票號碼</h5>
+                        <span class="text-danger">04597101</span>
+                    </div>
+                    <p class="d-flex flex-wrap">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】<br> >【拓元售票系統】。<br>若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>若需退票，請按照退票辦法進行申請。
+                    </p>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <%- include('./layout/footer'); -%>
+    <%- include('./layout/aos'); -%>
+    <script type="module" src="../main.js"></script>
+
+</body>
+</html>

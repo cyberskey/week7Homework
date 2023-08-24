@@ -1,0 +1,17 @@
+.tagItem {
+    border: 1px solid $black;
+
+    a {
+        display: flex;
+        justify-content: center;
+        border-left: 4px solid $black;
+        padding: 4px 24px;
+        font-family: Noto Serif TC;
+
+        &:hover {
+            border-left: 4px solid $yellow;
+            color: $white;
+            background: $black;
+        }
+    }
+}
